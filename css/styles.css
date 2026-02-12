@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #0a2540;
+    color: white;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 60px;
+    background: #f4f4f4;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 40px;
+}
+
+.thank-you {
+    background: #0a2540;
+    color: white;
+}
+
+/* FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: #0a2540;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00bcd4;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #0a2540;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
